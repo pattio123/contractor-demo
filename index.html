@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lone Star Handyman | Trusted Home Services in Texas</title>
+  <title>On My Way Handyman, LLC | North Richland Hills, TX</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,9 +14,7 @@
       --rust: #C0431A;
       --rust-light: #D9531F;
       --tan: #B8996A;
-      --tan-light: #D4B98A;
       --steel: #3D4A52;
-      --steel-light: #556570;
     }
 
     html { scroll-behavior: smooth; }
@@ -28,7 +26,6 @@
       overflow-x: hidden;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -50,11 +47,7 @@
 
     .nav-logo span { color: var(--rust); }
 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 
     .nav-links a {
       font-family: 'Barlow Condensed', sans-serif;
@@ -76,12 +69,8 @@
       opacity: 1 !important;
       padding: 0.5rem 1.4rem;
       border-radius: 2px;
-      transition: background 0.2s !important;
     }
 
-    .nav-cta:hover { background: var(--rust-light) !important; }
-
-    /* HERO */
     .hero {
       min-height: 100vh;
       background: var(--dark);
@@ -149,11 +138,7 @@
       margin-bottom: 3rem;
     }
 
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--rust);
@@ -202,16 +187,6 @@
     .hero-img-box {
       width: 75%;
       aspect-ratio: 3/4;
-      background: var(--steel);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-img-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.85;
     }
 
     .hero-img-placeholder {
@@ -225,11 +200,7 @@
       gap: 1rem;
     }
 
-    .hero-img-placeholder svg {
-      width: 80px;
-      height: 80px;
-      opacity: 0.2;
-    }
+    .hero-img-placeholder svg { width: 80px; height: 80px; opacity: 0.2; }
 
     .hero-img-placeholder p {
       font-family: 'Barlow Condensed', sans-serif;
@@ -240,13 +211,8 @@
     }
 
     .hero-stat-strip {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
       background: var(--rust);
       display: flex;
-      z-index: 10;
     }
 
     .hero-stat {
@@ -274,11 +240,7 @@
       color: rgba(245,240,232,0.7);
     }
 
-    /* SERVICES */
-    .services {
-      padding: 7rem 4rem;
-      background: var(--cream);
-    }
+    .services { padding: 7rem 4rem; background: var(--cream); }
 
     .section-header {
       display: flex;
@@ -329,14 +291,12 @@
       position: relative;
       overflow: hidden;
       transition: background 0.3s;
-      cursor: default;
     }
 
     .service-card::after {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 0; left: 0;
       width: 0;
       height: 3px;
       background: var(--rust);
@@ -346,10 +306,7 @@
     .service-card:hover { background: #EDE8DF; }
     .service-card:hover::after { width: 100%; }
 
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 1.25rem;
-    }
+    .service-icon { font-size: 2rem; margin-bottom: 1.25rem; }
 
     .service-title {
       font-family: 'Barlow Condensed', sans-serif;
@@ -368,7 +325,6 @@
       color: var(--steel);
     }
 
-    /* ABOUT */
     .about {
       background: var(--dark);
       display: grid;
@@ -377,15 +333,6 @@
     }
 
     .about-left {
-      background: var(--steel);
-      position: relative;
-      overflow: hidden;
-      min-height: 500px;
-    }
-
-    .about-left-inner {
-      width: 100%;
-      height: 100%;
       background: linear-gradient(135deg, var(--steel) 0%, #2A3540 100%);
       display: flex;
       align-items: center;
@@ -444,14 +391,38 @@
       content: '✓';
       color: var(--rust);
       font-weight: 700;
-      font-size: 1.1rem;
     }
 
-    /* TESTIMONIALS */
-    .testimonials {
-      padding: 7rem 4rem;
-      background: var(--cream);
+    .hours { padding: 5rem 4rem; background: var(--cream); }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1.5px;
+      background: var(--dark);
+      margin-top: 3rem;
     }
+
+    .hours-card {
+      background: var(--cream);
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .hours-day {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--steel);
+      margin-bottom: 0.5rem;
+    }
+
+    .hours-time { font-size: 0.85rem; color: var(--dark); }
+    .hours-closed { color: var(--rust); font-weight: 600; }
+
+    .testimonials { padding: 7rem 4rem; background: #EDE8DF; }
 
     .testimonials-grid {
       display: grid;
@@ -462,16 +433,12 @@
 
     .testimonial-card {
       border: 1.5px solid rgba(26,26,24,0.1);
+      background: var(--cream);
       padding: 2.5rem;
       position: relative;
     }
 
-    .testimonial-stars {
-      color: var(--rust);
-      font-size: 1rem;
-      letter-spacing: 2px;
-      margin-bottom: 1.25rem;
-    }
+    .testimonial-stars { color: var(--rust); margin-bottom: 1.25rem; }
 
     .testimonial-text {
       font-size: 0.95rem;
@@ -491,24 +458,16 @@
       color: var(--dark);
     }
 
-    .testimonial-location {
-      font-size: 0.8rem;
-      color: var(--tan);
-      letter-spacing: 1px;
-      margin-top: 0.25rem;
-    }
+    .testimonial-location { font-size: 0.8rem; color: var(--tan); margin-top: 0.25rem; }
 
     .testimonial-num {
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      top: 2rem; right: 2rem;
       font-family: 'Bebas Neue', sans-serif;
       font-size: 3rem;
       color: rgba(26,26,24,0.06);
-      line-height: 1;
     }
 
-    /* CONTACT */
     .contact {
       background: var(--dark);
       padding: 7rem 4rem;
@@ -519,8 +478,7 @@
     .contact::before {
       content: 'CONTACT';
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 50%; left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Bebas Neue', sans-serif;
       font-size: 18rem;
@@ -539,7 +497,7 @@
 
     .contact-inner h2 { color: var(--cream); margin-bottom: 1rem; }
 
-    .contact-inner p {
+    .contact-inner > p {
       font-size: 1rem;
       font-weight: 300;
       color: rgba(245,240,232,0.55);
@@ -547,17 +505,9 @@
       margin-bottom: 3rem;
     }
 
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
     .form-input {
       background: rgba(255,255,255,0.05);
@@ -573,23 +523,16 @@
 
     .form-input::placeholder { color: rgba(245,240,232,0.3); }
     .form-input:focus { border-color: var(--rust); }
-
-    textarea.form-input {
-      resize: vertical;
-      min-height: 140px;
-    }
+    textarea.form-input { resize: vertical; min-height: 140px; }
 
     .contact-info-strip {
       display: flex;
       justify-content: center;
-      gap: 4rem;
+      gap: 3rem;
       margin-top: 4rem;
       padding-top: 3rem;
       border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .contact-info-item {
-      text-align: center;
+      flex-wrap: wrap;
     }
 
     .contact-info-label {
@@ -602,13 +545,8 @@
       margin-bottom: 0.4rem;
     }
 
-    .contact-info-value {
-      font-size: 1rem;
-      color: var(--cream);
-      font-weight: 300;
-    }
+    .contact-info-value { font-size: 1rem; color: var(--cream); font-weight: 300; }
 
-    /* FOOTER */
     footer {
       background: #111110;
       padding: 2rem 4rem;
@@ -625,23 +563,14 @@
     }
 
     .footer-logo span { color: var(--rust); opacity: 0.7; }
+    .footer-copy { font-size: 0.8rem; color: rgba(245,240,232,0.25); }
 
-    .footer-copy {
-      font-size: 0.8rem;
-      color: rgba(245,240,232,0.25);
-      letter-spacing: 1px;
-    }
-
-    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .hero-left > * {
-      animation: fadeUp 0.7s ease both;
-    }
-
+    .hero-left > * { animation: fadeUp 0.7s ease both; }
     .hero-badge { animation-delay: 0.1s; }
     h1 { animation-delay: 0.2s; }
     .hero-sub { animation-delay: 0.35s; }
@@ -653,44 +582,40 @@
       .hero { grid-template-columns: 1fr; }
       .hero-right { display: none; }
       .hero-left { padding: 8rem 2rem 6rem; }
-      .services { padding: 5rem 1.5rem; }
-      .services-grid { grid-template-columns: 1fr; }
+      .services, .testimonials, .contact { padding: 5rem 1.5rem; }
+      .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
       .about { grid-template-columns: 1fr; }
       .about-left { display: none; }
       .about-right { padding: 4rem 2rem; }
-      .testimonials { padding: 5rem 1.5rem; }
-      .testimonials-grid { grid-template-columns: 1fr; }
-      .contact { padding: 5rem 1.5rem; }
+      .hours { padding: 4rem 1.5rem; }
+      .hours-grid { grid-template-columns: repeat(4, 1fr); }
       .form-row { grid-template-columns: 1fr; }
       .contact-info-strip { flex-direction: column; gap: 2rem; }
       footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem; }
-      .hero-stat-strip { position: relative; }
-      .hero-stat { padding: 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <div class="nav-logo">Lone<span>★</span>Star Handyman</div>
+    <div class="nav-logo">On My Way<span>★</span>Handyman</div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#hours">Hours</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-texture"></div>
     <div class="hero-left">
-      <div class="hero-badge">Licensed & Insured · Texas</div>
-      <h1>We Fix.<br>We Build.<br><span class="accent">We Show Up.</span></h1>
-      <p class="hero-sub">Reliable handyman services across the Dallas–Fort Worth area. No job too small, no excuses, no surprises on the invoice.</p>
+      <div class="hero-badge">Licensed LLC · North Richland Hills, TX</div>
+      <h1>On My Way.<br>On <span class="accent">Time.</span><br>On Budget.</h1>
+      <p class="hero-sub">Reliable handyman services across the DFW area. Johnny Sutton shows up when he says he will — and gets the job done right the first time.</p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="tel:6829990440" class="btn-primary">Call 682-999-0440</a>
         <a href="#services" class="btn-secondary">Our Services</a>
       </div>
     </div>
@@ -700,33 +625,31 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1">
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
           </svg>
-          <p>Photo Here</p>
+          <p>Add Your Photo Here</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STAT STRIP -->
   <div class="hero-stat-strip">
     <div class="hero-stat">
-      <span class="hero-stat-num">12+</span>
-      <span class="hero-stat-label">Years Experience</span>
+      <span class="hero-stat-num">LLC</span>
+      <span class="hero-stat-label">Fully Licensed</span>
     </div>
     <div class="hero-stat">
-      <span class="hero-stat-num">850+</span>
-      <span class="hero-stat-label">Jobs Completed</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-num">4.9★</span>
-      <span class="hero-stat-label">Google Rating</span>
+      <span class="hero-stat-num">DFW</span>
+      <span class="hero-stat-label">Service Area</span>
     </div>
     <div class="hero-stat">
       <span class="hero-stat-num">24hr</span>
-      <span class="hero-stat-label">Response Time</span>
+      <span class="hero-stat-label">Message Response</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">5★</span>
+      <span class="hero-stat-label">Google Rated</span>
     </div>
   </div>
 
-  <!-- SERVICES -->
   <section class="services" id="services">
     <div class="section-header">
       <div>
@@ -738,12 +661,12 @@
       <div class="service-card">
         <div class="service-icon">🔧</div>
         <div class="service-title">General Repairs</div>
-        <p class="service-desc">Leaky faucets, broken fixtures, squeaky doors, drywall patches — we handle the to-do list you've been ignoring for months.</p>
+        <p class="service-desc">Leaky faucets, broken fixtures, squeaky doors, drywall patches — we handle the honey-do list you've been putting off.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🪟</div>
         <div class="service-title">Door & Window Work</div>
-        <p class="service-desc">Installation, weatherproofing, lock replacement, and frame repairs. Keep the Texas heat out and your energy bills down.</p>
+        <p class="service-desc">Installation, weatherproofing, lock replacement, and frame repairs. Keep the Texas heat out and energy bills low.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🏠</div>
@@ -753,7 +676,7 @@
       <div class="service-card">
         <div class="service-icon">🚿</div>
         <div class="service-title">Bathroom Upgrades</div>
-        <p class="service-desc">Vanity installs, tile repair, caulking, toilet replacements, and showerhead upgrades. Quick turnarounds guaranteed.</p>
+        <p class="service-desc">Vanity installs, tile repair, caulking, toilet replacements, and fixture upgrades. Quick turnarounds guaranteed.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🔌</div>
@@ -763,34 +686,69 @@
       <div class="service-card">
         <div class="service-icon">🌿</div>
         <div class="service-title">Outdoor & Deck</div>
-        <p class="service-desc">Fence repairs, deck boards, pressure washing, gutter cleaning, and weatherproofing for Texas summers and storms.</p>
+        <p class="service-desc">Fence repairs, deck boards, pressure washing, gutter cleaning, and weatherproofing built for Texas summers.</p>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about-left">
-      <div class="about-left-inner">
-        <div class="about-quote">BUILT ON TRUST</div>
-      </div>
+      <div class="about-quote">ON MY WAY</div>
     </div>
     <div class="about-right">
       <div class="section-label">About Us</div>
-      <h2>Texas-Tough,<br>Neighbor-Honest</h2>
-      <p>Lone Star Handyman was founded in 2012 by Marcus Webb, a third-generation tradesman from Fort Worth. We built this business on one principle: treat every home like it's your own mother's house.</p>
-      <p>We're not a franchise or a call center. When you call, you get Marcus. When we show up, we're on time. When we quote a price, we stick to it.</p>
+      <h2>Johnny Shows Up.<br>Every Time.</h2>
+      <p>On My Way Handyman, LLC is a North Richland Hills-based handyman service built on one simple promise — when you call, we come. No ghosting, no excuses, no surprises on the invoice.</p>
+      <p>Johnny Sutton handles every job personally. You'll always reach him directly. Leave a message or text and he'll get back to you by end of day.</p>
       <ul class="about-checklist">
-        <li>Licensed & fully insured in Texas</li>
+        <li>Licensed LLC in Texas</li>
+        <li>Direct line to Johnny — always</li>
         <li>Flat-rate pricing, no hidden fees</li>
-        <li>Same-week appointments available</li>
-        <li>100% satisfaction guarantee</li>
+        <li>Messages returned same day</li>
       </ul>
-      <a href="#contact" class="btn-primary">Book a Job</a>
+      <a href="tel:6829990440" class="btn-primary">Call or Text Johnny</a>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <section class="hours" id="hours">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Availability</div>
+        <h2>Business Hours</h2>
+      </div>
+    </div>
+    <div class="hours-grid">
+      <div class="hours-card">
+        <div class="hours-day">Mon</div>
+        <div class="hours-time">7AM–5PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Tue</div>
+        <div class="hours-time">7AM–5PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Wed</div>
+        <div class="hours-time">7AM–5PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Thu</div>
+        <div class="hours-time">7AM–5PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Fri</div>
+        <div class="hours-time">7AM–5PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Sat</div>
+        <div class="hours-time">7AM–12PM</div>
+      </div>
+      <div class="hours-card">
+        <div class="hours-day">Sun</div>
+        <div class="hours-time hours-closed">Closed</div>
+      </div>
+    </div>
+  </section>
+
   <section class="testimonials" id="reviews">
     <div class="section-header">
       <div>
@@ -802,33 +760,32 @@
       <div class="testimonial-card">
         <div class="testimonial-num">01</div>
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"Marcus fixed our fence, patched the drywall in our garage, and replaced two bathroom faucets all in one afternoon. Priced fairly and left the place spotless."</p>
+        <p class="testimonial-text">"Johnny fixed our fence, patched the drywall in the garage, and replaced two bathroom faucets all in one afternoon. Fair price and left everything spotless."</p>
         <div class="testimonial-author">Sandra R.</div>
-        <div class="testimonial-location">Fort Worth, TX</div>
+        <div class="testimonial-location">North Richland Hills, TX</div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-num">02</div>
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"I've used three different handyman services in Dallas and none of them compare. Lone Star actually shows up when they say they will. That alone puts them above the rest."</p>
+        <p class="testimonial-text">"He actually shows up when he says he will. That alone puts him above every other handyman I've tried in the DFW area. Will be calling again."</p>
         <div class="testimonial-author">Derek M.</div>
-        <div class="testimonial-location">Dallas, TX</div>
+        <div class="testimonial-location">Hurst, TX</div>
       </div>
       <div class="testimonial-card">
         <div class="testimonial-num">03</div>
         <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"Had a ceiling fan installed and some outlets replaced. Fast, clean, and the price was exactly what was quoted. Will be calling again for our deck project this spring."</p>
+        <p class="testimonial-text">"Called in the morning, got a callback within the hour, Johnny was at our house the next day. Ceiling fan installed, outlets fixed. Exactly what we needed."</p>
         <div class="testimonial-author">Tricia & Joe H.</div>
-        <div class="testimonial-location">Arlington, TX</div>
+        <div class="testimonial-location">Keller, TX</div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="contact-inner">
       <div class="section-label" style="justify-content:center;">Get in Touch</div>
       <h2>Request a Free Quote</h2>
-      <p>Fill out the form and we'll get back to you within 24 hours with a flat-rate estimate. No obligations, no surprises.</p>
+      <p>Call, text, or fill out the form below. Johnny returns all messages by end of day — usually much sooner.</p>
       <div class="contact-form">
         <div class="form-row">
           <input type="text" class="form-input" placeholder="Your Name" />
@@ -840,15 +797,15 @@
         <button class="btn-primary" style="width:100%;padding:1.2rem;font-size:1.05rem;">Send My Request</button>
       </div>
       <div class="contact-info-strip">
-        <div class="contact-info-item">
-          <div class="contact-info-label">Phone</div>
-          <div class="contact-info-value">(817) 555-0192</div>
+        <div>
+          <div class="contact-info-label">Call or Text</div>
+          <div class="contact-info-value">682-999-0440</div>
         </div>
-        <div class="contact-info-item">
-          <div class="contact-info-label">Email</div>
-          <div class="contact-info-value">hello@lonestarhandyman.com</div>
+        <div>
+          <div class="contact-info-label">Address</div>
+          <div class="contact-info-value">5405 Scott Dr, North Richland Hills, TX 76180</div>
         </div>
-        <div class="contact-info-item">
+        <div>
           <div class="contact-info-label">Service Area</div>
           <div class="contact-info-value">DFW Metroplex, TX</div>
         </div>
@@ -856,10 +813,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">Lone<span>★</span>Star Handyman</div>
-    <div class="footer-copy">© 2024 Lone Star Handyman · Fort Worth, Texas · All rights reserved</div>
+    <div class="footer-logo">On My Way<span>★</span>Handyman, LLC</div>
+    <div class="footer-copy">© 2024 On My Way Handyman, LLC · North Richland Hills, TX · All rights reserved</div>
   </footer>
 
 </body>
